@@ -1,8 +1,7 @@
 # eyes
-Out of the box web app security scan tool.
+Out of the box web app/docker security scan tool.
 
-## CLI
-- [ ] https://github.com/zeit/hyper
+## Inspire
 - [ ] https://github.com/zeit/now-app
 
 ## Tools
