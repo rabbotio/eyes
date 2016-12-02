@@ -49,3 +49,8 @@ Out of the box web app/docker security scan tool.
 ## Speed Tools
 - [ ] https://developers.google.com/speed/docs/insights/v2/reference/pagespeedapi/runpagespeed#try-it
 - [ ] https://github.com/sitespeedio/coach
+- [ ] https://github.com/GoogleChrome/lighthouse
+
+## DOM Tools
+- https://github.com/APIs-guru/graphql-apis
+
