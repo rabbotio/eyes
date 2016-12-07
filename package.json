@@ -1,0 +1,71 @@
+{
+  "repository": "rabbots/eyes-app",
+  "scripts": {
+    "start": "electron app/dist/main",
+    "postinstall": "install-app-deps && webpack",
+    "dev": "webpack -w",
+    "clean": "chmod u+x dist && rm -rf node_modules app/node_modules dist app/dist",
+    "build": "NODE_ENV=production webpack",
+    "pack": "npm run build && build --dir"
+  },
+  "build": {
+    "appId": "tbd",
+    "category": "public.app-category.developer-tools",
+    "asar": false
+  },
+  "xo": {
+    "extends": "xo-react",
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "env": [
+      "browser",
+      "node"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": 0,
+      "import/no-unresolved": 0,
+      "react/jsx-filename-extension": 0,
+      "react/no-danger": 0,
+      "no-unneeded-ternary": 0,
+      "babel/no-await-in-loop": 0,
+      "complexity": 0
+    },
+    "ignores": [
+      "app/**"
+    ]
+  },
+  "greenkeeper": {
+    "emails": false
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autosize-input": "0.4.0",
+    "babel-core": "6.18.2",
+    "babel-loader": "6.2.8",
+    "babel-plugin-transform-async-to-generator": "6.16.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "copy-webpack-plugin": "4.0.1",
+    "css-loader": "0.26.1",
+    "cssnano": "3.8.1",
+    "electron": "1.4.10",
+    "electron-builder": "10.5.0",
+    "eslint-config-xo-react": "0.10.0",
+    "eslint-plugin-react": "6.7.1",
+    "json-loader": "0.5.4",
+    "postcss-import": "9.0.0",
+    "postcss-loader": "1.1.1",
+    "querystring": "0.2.0",
+    "raw-loader": "0.5.1",
+    "react": "15.4.1",
+    "react-dom": "15.4.1",
+    "react-slick": "0.14.5",
+    "react-svg-inline": "1.2.0",
+    "slick-carousel": "1.6.0",
+    "style-loader": "0.13.1",
+    "webpack": "1.13.3",
+    "webpack-livereload-plugin": "0.9.0",
+    "xo": "0.17.1"
+  }
+}

@@ -93,3 +93,20 @@ Out of the box web app/docker security scan tool.
 - [ ] [Core] Dropped `Docker` file get scan with ...(TBD)
 - [ ] [Perf] ...(TBD)
 
+- - -
+
+## Usage
+```bash
+# to install the dependencies
+$ npm install
+# to bundle code and watch change
+$ npm run dev
+# to run on dev mode
+$ npm start
+```
+
+To make bundled application:
+```bash
+$ npm run pack
+```
+
