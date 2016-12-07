@@ -1,7 +1,7 @@
 # eyes
 Out of the box web app/docker security scan tool.
 
-![](art/rabbot-eye-of-re.png)
+![](art/rabbot-eye-of-ra.png)
 
 ## Inspire
 - [ ] https://github.com/zeit/now-app
