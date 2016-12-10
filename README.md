@@ -16,35 +16,14 @@ Out of the box web app/docker security scan tool.
 - CLI : https://github.com/zeit/now-cli
 - Core : https://github.com/bearded-web/images
 
-## Security Tools
-### Web
-- [ ] https://github.com/andresriancho/w3af
-- [ ] https://github.com/rabbots/sqlmap
-- [ ] https://github.com/golismero/golismero
-- [ ] https://github.com/jarthod/ssl-test
-- [ ] https://github.com/nabla-c0d3/sslyze
-
-### Docker
-- [ ] https://github.com/docker/docker-bench-security
-- [ ] https://github.com/coreos/clair/tree/master/contrib/analyze-local-images
-- [ ] https://blog.mozilla.org/webqa/2016/05/11/docker-owasp-zap-part-one/
-
-### Existing
-- https://www.owasp.org/index.php/Category:Vulnerability_Scanning_Tools
-- https://github.com/infoslack/awesome-web-hacking#docker-images-for-penetration-testing
-
-### No Resale (Can't use)
-- https://nodesecurity.io/
-- https://github.com/wpscanteam/wpscan
-
 - - -
 
 ## Expected
 ### alpha
-- [ ] Core function for scan web and Docker should work by drag and drop. [issues](https://github.com/rabbots/eyes/issues?q=is%3Aopen+is%3Aissue+milestone%3Aalpha)
+- Core function for scan web and Docker should work by drag and drop. [issues](https://github.com/rabbots/eyes/issues?q=is%3Aopen+is%3Aissue+milestone%3Aalpha)
 
 ### beta
-- [ ] UI should be more welcome for real user. [issues](https://github.com/rabbots/eyes/issues?q=is%3Aopen+is%3Aissue+milestone%3Abeta)
+- UI should be more welcome for real user. [issues](https://github.com/rabbots/eyes/issues?q=is%3Aopen+is%3Aissue+milestone%3Abeta)
 - [ ] [UI] User can see scan progress at icon in task bar.
 - [ ] [UI] User get notify as popup with scan results as HTML.
 - [ ] [UI] User can choose to `save`, `close` poppup.
@@ -89,36 +68,7 @@ Out of the box web app/docker security scan tool.
 - [ ] Free trial. ...(TBD)
 - [ ] Scan on server. ...(TBD)
 
-- - -
-
-## Speed Tools
-- [ ] https://developers.google.com/speed/docs/insights/v2/reference/pagespeedapi/runpagespeed#try-it
-- [ ] https://github.com/sitespeedio/coach
-- [ ] https://github.com/GoogleChrome/lighthouse
-
-## Usefuls
-- DOM hack tools : https://github.com/APIs-guru/graphql-apis
-- Web Performance Metrics : http://rigor.com/blog/2016/11/web-performance-metrics
-
 ### v2
 - [ ] [Core] Dropped URL get scan with ...(TBD)
 - [ ] [Core] Dropped `Docker` file get scan with ...(TBD)
 - [ ] [Perf] ...(TBD)
-
-- - -
-
-## Usage
-```bash
-# to install the dependencies
-$ npm install
-# to bundle code and watch change
-$ npm run dev
-# to run on dev mode
-$ npm start
-```
-
-To make bundled application:
-```bash
-$ npm run pack
-```
-
