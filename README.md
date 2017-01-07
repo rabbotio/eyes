@@ -18,7 +18,7 @@ Out of the box web app/docker security scan tool.
 
 - - -
 
-![rabbot-eyes-co](https://cloud.githubusercontent.com/assets/97060/21741541/e18144b2-d50b-11e6-84a3-274a6e43b0a9.png)
+![rabbot-eyes-co2](https://cloud.githubusercontent.com/assets/97060/21742576/54db255a-d524-11e6-94f1-26fd737a1412.png)
 
 - - -
 
