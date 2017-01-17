@@ -14,7 +14,49 @@ Out of the box web app/docker security scan tool.
 ## Inspire
 - App : https://github.com/zeit/now-app
 - CLI : https://github.com/zeit/now-cli
-- Core : https://github.com/bearded-web/images
+- Core (Docker) : https://github.com/bearded-web/images
+- Core (perl) : https://github.com/schubergphilis/Seccubus_v2/tree/master/scanners
+
+- - -
+
+## Security Tools
+### Docker Ready
+- [x] https://github.com/bearded-web/images
+- [ ] https://github.com/jumanjihouse/docker-ssllabs-scan
+- [ ] https://github.com/kost/docker-webscan
+
+### Web
+- [ ] https://github.com/andresriancho/w3af
+- [ ] https://github.com/rabbots/sqlmap
+- [ ] https://github.com/golismero/golismero
+- [ ] https://github.com/jarthod/ssl-test
+- [ ] https://github.com/nabla-c0d3/sslyze
+- [ ] https://github.com/ssllabs/ssllabs-scan
+
+### Docker
+- [ ] https://github.com/docker/docker-bench-security
+- [ ] https://github.com/coreos/clair/tree/master/contrib/analyze-local-images
+- [ ] https://blog.mozilla.org/webqa/2016/05/11/docker-owasp-zap-part-one/
+
+### Existing
+- https://www.owasp.org/index.php/Category:Vulnerability_Scanning_Tools
+- https://github.com/infoslack/awesome-web-hacking#docker-images-for-penetration-testing
+
+### No Resale (Can't use)
+- https://nodesecurity.io/
+- https://github.com/wpscanteam/wpscan
+
+- - -
+
+## Speed Tools
+- [ ] https://developers.google.com/speed/docs/insights/v2/reference/pagespeedapi/runpagespeed#try-it
+- [ ] https://github.com/sitespeedio/coach
+- [ ] https://github.com/GoogleChrome/lighthouse
+- [ ] https://github.com/dequelabs/axe-core
+
+## Usefuls
+- DOM hack tools : https://github.com/APIs-guru/graphql-apis
+- Web Performance Metrics : http://rigor.com/blog/2016/11/web-performance-metrics
 
 - - -
 
@@ -41,7 +83,7 @@ Out of the box web app/docker security scan tool.
 - [ ] [Frontend] User can input link for scan.
 - [ ] [Frontend] Link save to `Firebase`. https://firebase.google.com/docs/reference/rest/database/
 - [ ] [Frontend] User can input email for subscribe scan results.
-- [ ] [Backend] User email and link get sync to `Parse` https://medium.com/@katopz/meteor-firebase-f9a62af5ef92
+- [ ] [Backend] User email and link get sync to `MongoDB` https://medium.com/@katopz/meteor-firebase-f9a62af5ef92
 - [ ] [Backend] Subscribers collections get upsert after user mutate email and url.
 - [ ] [Backend] `Firebase` state update to `wait` after sync.
 - [ ] [Core] Can consume link from `Parse`.
