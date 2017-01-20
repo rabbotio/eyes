@@ -60,16 +60,16 @@ Out of the box web app/docker security scan tool.
 
 - - -
 
-![rabbot-eyes-co3](https://cloud.githubusercontent.com/assets/97060/21742604/e41f5560-d524-11e6-8b47-eb2166c6921e.png)
+![rabbot-eyes-co3](https://cloud.githubusercontent.com/assets/97060/22155626/ae647520-df62-11e6-8a8e-1e52bf025bf8.png)
 
 - - -
 
 ## Expected
 
 ### 0.1.0 POC
-- [ ] [Frontend] Ensure SSR, OfflieFirst, PWA.
-- [ ] [Backend] Prepare server for `Docker`, `Parse`, `Eyes`.
-- [ ] [Core] Engine can scan 5 tools.
+- [ ] [Cron] Setup `Firebase` -> `Webtasks` -> `Eyes`
+- [ ] [Backend] Prepare server for `Ubuntu`, `Docker`, `Eyes`.
+- [ ] [Core] Engine have atleast 1 security tool web scan.
 
 ### 0.2.0 Secure Stack
 - [ ] [Frontend] Web pass eyes test.
@@ -83,20 +83,20 @@ Out of the box web app/docker security scan tool.
 - [ ] [Frontend] User can input link for scan.
 - [ ] [Frontend] Link save to `Firebase`. https://firebase.google.com/docs/reference/rest/database/
 - [ ] [Frontend] User can input email for subscribe scan results.
-- [ ] [Backend] User email and link get sync to `MongoDB` https://medium.com/@katopz/meteor-firebase-f9a62af5ef92
-- [ ] [Backend] Subscribers collections get upsert after user mutate email and url.
+- [ ] [Backend] User email and link get sync to `Firebase`.
+- [ ] [Backend] Subscribers collections at `Firebase` get upsert after user mutate email and url.
 - [ ] [Backend] `Firebase` state update to `wait` after sync.
-- [ ] [Core] Can consume link from `Parse`.
+- [ ] [Core] Can consume link from `Firebase`.
 
 ### 0.5.0 Scan/Security
 - [ ] [Backend] Admin can set cron job for scan interval.
-- [ ] [Core] Engine scan link for security and output result upsert to database via `Parse`.
+- [ ] [Core] Engine scan link for security and output result upsert to database via `Firebase`.
 - [ ] [Backend] Emails collections state get update as `will_send`, update `commitAt`.
 - [ ] [Backend] Admin can see results listed in dashboard
 - [ ] [Backend] Admin can see each html result.
 
 ### 0.6.0 Scan/Speed
-- [ ] [Core] Engine scan link for speed and output result upsert to database via `Parse`.
+- [ ] [Core] Engine scan link for speed and output result upsert to database via `Firebase`.
 
 ### 0.7.0 Send
 - [ ] [Backend] Admin can set cron job for email results interval.
