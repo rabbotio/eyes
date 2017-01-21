@@ -22,16 +22,19 @@ Out of the box web app/docker security scan tool.
 ## Security Tools
 ### Docker Ready
 - [x] https://github.com/bearded-web/images
-- [ ] https://github.com/jumanjihouse/docker-ssllabs-scan
-- [ ] https://github.com/kost/docker-webscan
+- [ ] https://github.com/mozilla/tls-observatory
+- [ ] ~~https://github.com/kost/docker-webscan/blob/master/alpine-nikto-git/Dockerfile~~
+- [ ] https://github.com/pebble/golismero-suite
 
 ### Web
 - [ ] https://github.com/andresriancho/w3af
-- [ ] https://github.com/rabbots/sqlmap
 - [ ] https://github.com/golismero/golismero
-- [ ] https://github.com/jarthod/ssl-test
-- [ ] https://github.com/nabla-c0d3/sslyze
-- [ ] https://github.com/ssllabs/ssllabs-scan
+- [ ] https://github.com/sullo/nikto
+- [ ] https://github.com/rabbots/sqlmap
+
+### SSL
+- [ ] ~~https://github.com/jarthod/ssl-test~~
+- [ ] ~~https://github.com/nabla-c0d3/sslyze~~
 
 ### Docker
 - [ ] https://github.com/docker/docker-bench-security
@@ -45,6 +48,9 @@ Out of the box web app/docker security scan tool.
 ### No Resale (Can't use)
 - https://nodesecurity.io/
 - https://github.com/wpscanteam/wpscan
+- https://github.com/jumanjihouse/docker-ssllabs-scan
+- https://github.com/ssllabs/ssllabs-scan
+- https://github.com/Arachni/arachni
 
 - - -
 
