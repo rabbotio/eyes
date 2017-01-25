@@ -32,7 +32,7 @@ Out of the box web app/docker security scan tool.
 - [ ] https://github.com/golismero/golismero
 - [ ] https://github.com/sullo/nikto
 - [ ] https://github.com/rabbots/sqlmap
-- [x] [[Mozilla HTTP Observatory](https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md)
+- [x] [Mozilla HTTP Observatory](https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md)
 
 ### SSL
 - [ ] ~~https://github.com/jarthod/ssl-test~~
@@ -87,18 +87,18 @@ export RESCAN=false
 ```
 curl --data "hidden=$HIDDEN&rescan=$RESCAN" \
   https://http-observatory.security.mozilla.org/api/v1/analyze?host=$HOST 2>/dev/null \
-  | echo "{ state: .state, id: .scan_id}"
+  | jq "{ state: .state, id: .scan_id}"
 ```
 ### Expect
 ```json
 {
   "state": "FINISHED",
-  "id": 3180934
+  "id": 3181931
 }
 ```
 ### Result
 ```
-curl https://http-observatory.security.mozilla.org/api/v1/getScanResults?scan=3180934 2>/dev/null
+curl https://http-observatory.security.mozilla.org/api/v1/getScanResults?scan=3181931 2>/dev/null
 ```
 ---
 ## [Mozilla TLS Observatory](https://github.com/mozilla/tls-observatory)
@@ -108,11 +108,11 @@ curl --data "target=$HOST&rescan=$RESCAN" https://tls-observatory.services.mozil
 ```
 ### Expect
 ```json
-{"scan_id":13590388}
+{"scan_id":13590807}
 ```
 ### Result
 ```
-curl https://tls-observatory.services.mozilla.com/api/v1/results?id=13590388 | jq .
+curl https://tls-observatory.services.mozilla.com/api/v1/results?id=13590807 | jq .
 ```
 
 ## Expected
