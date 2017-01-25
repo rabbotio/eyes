@@ -21,20 +21,23 @@ Out of the box web app/docker security scan tool.
 
 ## Security Tools
 ### Docker Ready
-- [x] https://github.com/bearded-web/images
-- [ ] https://github.com/mozilla/tls-observatory
+> Deprecated, too much timeout and error.
+- [ ] ~~https://github.com/bearded-web/images~~
+- [ ] ~~https://github.com/mozilla/tls-observatory~~
 - [ ] ~~https://github.com/kost/docker-webscan/blob/master/alpine-nikto-git/Dockerfile~~
-- [ ] https://github.com/pebble/golismero-suite
+- [ ] ~~https://github.com/pebble/golismero-suite~~
 
 ### Web
 - [ ] https://github.com/andresriancho/w3af
 - [ ] https://github.com/golismero/golismero
 - [ ] https://github.com/sullo/nikto
 - [ ] https://github.com/rabbots/sqlmap
+- [x] [[Mozilla HTTP Observatory](https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md)
 
 ### SSL
 - [ ] ~~https://github.com/jarthod/ssl-test~~
 - [ ] ~~https://github.com/nabla-c0d3/sslyze~~
+- [x] [Mozilla TLS Observatory](https://github.com/mozilla/tls-observatory)
 
 ### Docker
 - [ ] https://github.com/docker/docker-bench-security
@@ -70,34 +73,69 @@ Out of the box web app/docker security scan tool.
 
 - - -
 
+# Raw
+
+## Config
+```shell
+export HOST=rabbot.io
+export HIDDEN=true
+export RESCAN=false
+```
+---
+## [Mozilla HTTP Observatory](https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md)
+### Scan
+```
+curl --data "hidden=$HIDDEN&rescan=$RESCAN" \
+  https://http-observatory.security.mozilla.org/api/v1/analyze?host=$HOST 2>/dev/null \
+  | echo "{ state: .state, id: .scan_id}"
+```
+### Expect
+```json
+{
+  "state": "FINISHED",
+  "id": 3180934
+}
+```
+### Result
+```
+curl https://http-observatory.security.mozilla.org/api/v1/getScanResults?scan=3180934 2>/dev/null
+```
+---
+## [Mozilla TLS Observatory](https://github.com/mozilla/tls-observatory)
+### Scan
+```shell
+curl --data "target=$HOST&rescan=$RESCAN" https://tls-observatory.services.mozilla.com/api/v1/scan
+```
+### Expect
+```json
+{"scan_id":13590388}
+```
+### Result
+```
+curl https://tls-observatory.services.mozilla.com/api/v1/results?id=13590388 | jq .
+```
+
 ## Expected
 
-### 0.1.0 POC
-- [ ] [Cron] Setup `Firebase` -> `Webtasks` -> `Eyes`
-- [ ] [Backend] Prepare server for `Ubuntu`, `Docker`, `Eyes`.
-- [ ] [Core] Engine have atleast 1 security tool web scan.
-
-### 0.2.0 Secure Stack
-- [ ] [Frontend] Web pass eyes test.
-- [ ] [Backend] `Docker` pass eyes test.
-- [ ] [Core] `Docker` pass docker-bench test.
-
-### 0.3.0
-- [ ] TBD
-
-### 0.4.0 Store
+### 0.3.0 Store
 - [ ] [Frontend] User can input link for scan.
 - [ ] [Frontend] Link save to `Firebase`. https://firebase.google.com/docs/reference/rest/database/
 - [ ] [Frontend] User can input email for subscribe scan results.
-- [ ] [Backend] User email and link get sync to `Firebase`.
+
+### 0.4.0 Store
+- [ ] [Backend] User email and link get sync to `Firebase` by webtask. https://github.com/bennythejudge/webtask-firebase
 - [ ] [Backend] Subscribers collections at `Firebase` get upsert after user mutate email and url.
-- [ ] [Backend] `Firebase` state update to `wait` after sync.
+- [ ] [Backend] When subscribe task's `state` is `queued` , update `queuedAt`.
 - [ ] [Core] Can consume link from `Firebase`.
 
 ### 0.5.0 Scan/Security
-- [ ] [Backend] Admin can set cron job for scan interval.
 - [ ] [Core] Engine scan link for security and output result upsert to database via `Firebase`.
-- [ ] [Backend] Emails collections state get update as `will_send`, update `commitAt`.
+- [ ] [Backend] When `scan` task's `state` is `scan`, update `scanAt`.
+- [ ] [Backend] When `succeed` task's `state` is `scanned`, update `scannedAt`.
+- [ ] [Backend] When `failed` task's `state` is `queued` , update `queuedAt`.
+- [ ] [Backend] When `failed` task's `retry` is incresing once, update `retryAt`.
+
+### 0.5.5 Admin
 - [ ] [Backend] Admin can see results listed in dashboard
 - [ ] [Backend] Admin can see each html result.
 
@@ -105,14 +143,18 @@ Out of the box web app/docker security scan tool.
 - [ ] [Core] Engine scan link for speed and output result upsert to database via `Firebase`.
 
 ### 0.7.0 Send
-- [ ] [Backend] Admin can set cron job for email results interval.
-- [ ] [Backend] Emails collections state get update as `sent`, update `sentAt`.
+- [ ] [Backend] [Webtask send email via MailGun](https://github.com/graphcool-examples/webtask-mailgun-email-example).
+- [ ] [Backend] Task's `state` is `sent`, update `sentAt`.
 
 ### 0.8.0 Stats
-- [ ] [Backend] Admin can see email sent results. (MailGun)
+- [ ] [Backend] Admin has to login to dashboard. (Firebase)
+- [ ] [Backend] Admin can see email scan task info. (Firebase)
+- [ ] [Backend] Admin can see email scaned results. (Firebase)
+- [ ] [Backend] Admin can see email sent/unsent results. (Firebase)
+- [ ] [Backend] Admin can see email stats. (MailGun)
 
 ### 0.9.0 Opt out
-- [ ] [Frontend] User can unsubscribe from each subscribed list.
+- [ ] [Frontend] User can unsubscribe from each subscription's list.
 - [ ] [Frontend] User get warn dialog before unsubscribe.
 
 ### 1.0.0 Prestashop
