@@ -96,9 +96,9 @@ curl --data "hidden=$HIDDEN&rescan=$RESCAN" \
   "id": 3181931
 }
 ```
-### Result
+### Result to file
 ```
-curl https://http-observatory.security.mozilla.org/api/v1/getScanResults?scan=3181931 2>/dev/null
+curl https://http-observatory.security.mozilla.org/api/v1/getScanResults?scan=3181931 2>/dev/null | jq . | cat >> ./raw/http-results.json
 ```
 ---
 ## [Mozilla TLS Observatory](https://github.com/mozilla/tls-observatory)
@@ -110,9 +110,9 @@ curl --data "target=$HOST&rescan=$RESCAN" https://tls-observatory.services.mozil
 ```json
 {"scan_id":13590807}
 ```
-### Result
+### Result to file
 ```
-curl https://tls-observatory.services.mozilla.com/api/v1/results?id=13590807 | jq .
+curl https://tls-observatory.services.mozilla.com/api/v1/results?id=13590807 2>/dev/null | jq . | cat >> ./raw/tls-results.json
 ```
 
 ## Expected
