@@ -1,191 +1,1900 @@
 {
-  "content-security-policy": {
-    "expectation": "csp-implemented-with-no-unsafe",
-    "name": "content-security-policy",
-    "output": {
-      "data": {
-        "connect-src": [
-          "https://www.google-analytics.com"
+  "id": 13590807,
+  "timestamp": "2017-01-25T16:29:11.869222Z",
+  "target": "rabbot.io",
+  "replay": -1,
+  "has_tls": true,
+  "cert_id": 1831767,
+  "trust_id": 3357122,
+  "is_valid": true,
+  "completion_perc": 100,
+  "connection_info": {
+    "scanIP": "128.199.210.13",
+    "serverside": true,
+    "ciphersuite": [
+      {
+        "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+        "code": 49199,
+        "protocols": [
+          "TLSv1.2"
         ],
-        "default-src": [
-          "'none'"
-        ],
-        "font-src": [
-          "fonts.googleapis.com",
-          "fonts.gstatic.com"
-        ],
-        "img-src": [
-          "'self'",
-          "data:",
-          "amp-error-reporting.appspot.com"
-        ],
-        "object-src": [
-          "'none'"
-        ],
-        "script-src": [
-          "'self'",
-          "https:",
-          "*.google-analytics.com",
-          "cdn.ampproject.org",
-          "'sha256-SYto7HB+/GJNcLL8K8V2a/TcrYa7vjo31poLSaS1c54='"
-        ],
-        "style-src": [
-          "fonts.googleapis.com",
-          "'unsafe-inline'"
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "ECDH,P-256,256bits",
+        "curves": [
+          "prime256v1"
         ]
+      },
+      {
+        "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+        "code": 49200,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "ECDH,P-256,256bits",
+        "curves": [
+          "prime256v1"
+        ]
+      },
+      {
+        "cipher": "DHE-RSA-AES128-GCM-SHA256",
+        "code": 158,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "DH,2048bits",
+        "curves": null
+      },
+      {
+        "cipher": "DHE-RSA-AES256-GCM-SHA384",
+        "code": 159,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "DH,2048bits",
+        "curves": null
+      },
+      {
+        "cipher": "ECDHE-RSA-AES128-SHA256",
+        "code": 49191,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "ECDH,P-256,256bits",
+        "curves": [
+          "prime256v1"
+        ]
+      },
+      {
+        "cipher": "ECDHE-RSA-AES128-SHA",
+        "code": 49171,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "ECDH,P-256,256bits",
+        "curves": [
+          "prime256v1"
+        ]
+      },
+      {
+        "cipher": "ECDHE-RSA-AES256-SHA384",
+        "code": 49192,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "ECDH,P-256,256bits",
+        "curves": [
+          "prime256v1"
+        ]
+      },
+      {
+        "cipher": "ECDHE-RSA-AES256-SHA",
+        "code": 49172,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "ECDH,P-256,256bits",
+        "curves": [
+          "prime256v1"
+        ]
+      },
+      {
+        "cipher": "DHE-RSA-AES128-SHA256",
+        "code": 103,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "DH,2048bits",
+        "curves": null
+      },
+      {
+        "cipher": "DHE-RSA-AES128-SHA",
+        "code": 51,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "DH,2048bits",
+        "curves": null
+      },
+      {
+        "cipher": "DHE-RSA-AES256-SHA256",
+        "code": 107,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "DH,2048bits",
+        "curves": null
+      },
+      {
+        "cipher": "DHE-RSA-AES256-SHA",
+        "code": 57,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "DH,2048bits",
+        "curves": null
+      },
+      {
+        "cipher": "AES128-GCM-SHA256",
+        "code": 156,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "None",
+        "curves": null
+      },
+      {
+        "cipher": "AES256-GCM-SHA384",
+        "code": 157,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "None",
+        "curves": null
+      },
+      {
+        "cipher": "AES128-SHA256",
+        "code": 60,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "None",
+        "curves": null
+      },
+      {
+        "cipher": "AES256-SHA256",
+        "code": 61,
+        "protocols": [
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "None",
+        "curves": null
+      },
+      {
+        "cipher": "AES128-SHA",
+        "code": 47,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "None",
+        "curves": null
+      },
+      {
+        "cipher": "AES256-SHA",
+        "code": 53,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "None",
+        "curves": null
+      },
+      {
+        "cipher": "DHE-RSA-CAMELLIA256-SHA",
+        "code": 136,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "DH,2048bits",
+        "curves": null
+      },
+      {
+        "cipher": "CAMELLIA256-SHA",
+        "code": 132,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "None",
+        "curves": null
+      },
+      {
+        "cipher": "DHE-RSA-CAMELLIA128-SHA",
+        "code": 69,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "DH,2048bits",
+        "curves": null
+      },
+      {
+        "cipher": "CAMELLIA128-SHA",
+        "code": 65,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "None",
+        "curves": null
+      },
+      {
+        "cipher": "DES-CBC3-SHA",
+        "code": 10,
+        "protocols": [
+          "TLSv1",
+          "TLSv1.1",
+          "TLSv1.2"
+        ],
+        "pubkey": 2048,
+        "sigalg": "sha256WithRSAEncryption",
+        "ticket_hint": "3600",
+        "ocsp_stapling": true,
+        "pfs": "None",
+        "curves": null
       }
-    },
-    "pass": false,
-    "result": "csp-implemented-with-unsafe-inline",
-    "score_description": "Content Security Policy (CSP) implemented unsafely. This includes 'unsafe-inline' or data: inside script-src, overly broad sources such as https: inside object-src or script-src, or not restricting the sources for object-src or script-src.",
-    "score_modifier": -20
+    ],
+    "curvesFallback": false
   },
-  "contribute": {
-    "expectation": "contribute-json-only-required-on-mozilla-properties",
-    "name": "contribute",
-    "output": {
-      "data": null
+  "analysis": [
+    {
+      "id": 5244435,
+      "analyzer": "ev-checker",
+      "result": "ev-checker did not exit successfully. exit status 1, Stderr: SEC_StringToOID failed: SEC_ERROR_BAD_DATA\n",
+      "success": false
     },
-    "pass": true,
-    "result": "contribute-json-only-required-on-mozilla-properties",
-    "score_description": "Contribute.json isn't required on websites that don't belong to Mozilla",
-    "score_modifier": 0
-  },
-  "cookies": {
-    "expectation": "cookies-secure-with-httponly-sessions",
-    "name": "cookies",
-    "output": {
-      "data": null
-    },
-    "pass": true,
-    "result": "cookies-not-found",
-    "score_description": "No cookies detected",
-    "score_modifier": 0
-  },
-  "cross-origin-resource-sharing": {
-    "expectation": "cross-origin-resource-sharing-not-implemented",
-    "name": "cross-origin-resource-sharing",
-    "output": {
-      "data": {
-        "acao": "*, *.ampproject.org",
-        "clientaccesspolicy": null,
-        "crossdomain": null
-      }
-    },
-    "pass": true,
-    "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
-    "score_description": "Content is visible via cross-origin resource sharing (CORS) files or headers, but is restricted to specific domains",
-    "score_modifier": 0
-  },
-  "public-key-pinning": {
-    "expectation": "hpkp-not-implemented",
-    "name": "public-key-pinning",
-    "output": {
-      "data": null,
-      "includeSubDomains": false,
-      "max-age": null,
-      "numPins": null,
-      "preloaded": false
-    },
-    "pass": true,
-    "result": "hpkp-not-implemented",
-    "score_description": "HTTP Public Key Pinning (HPKP) header not implemented",
-    "score_modifier": 0
-  },
-  "redirection": {
-    "expectation": "redirection-to-https",
-    "name": "redirection",
-    "output": {
-      "destination": "https://rabbot.io/",
-      "redirects": true,
-      "route": [
-        "http://rabbot.io/",
-        "https://rabbot.io/"
-      ],
-      "status_code": 200
-    },
-    "pass": true,
-    "result": "redirection-to-https",
-    "score_description": "Initial redirection is to https on same host, final destination is https",
-    "score_modifier": 0
-  },
-  "referrer-policy": {
-    "expectation": "referrer-policy-private",
-    "name": "referrer-policy",
-    "output": {
-      "data": null
-    },
-    "pass": true,
-    "result": "referrer-policy-not-implemented",
-    "score_description": "Referrer-Policy header not implemented",
-    "score_modifier": 0
-  },
-  "strict-transport-security": {
-    "expectation": "hsts-implemented-max-age-at-least-six-months",
-    "name": "strict-transport-security",
-    "output": {
-      "data": "max-age=31557600;",
-      "includeSubDomains": false,
-      "max-age": 31557600,
-      "preload": false,
-      "preloaded": false
-    },
-    "pass": true,
-    "result": "hsts-implemented-max-age-at-least-six-months",
-    "score_description": "HTTP Strict Transport Security (HSTS) header set to a minimum of six months (15768000)",
-    "score_modifier": 0
-  },
-  "subresource-integrity": {
-    "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-    "name": "subresource-integrity",
-    "output": {
-      "data": {
-        "https://cdn.ampproject.org/v0.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn.ampproject.org/v0/amp-analytics-0.1.js": {
-          "crossorigin": null,
-          "integrity": null
+    {
+      "id": 5244433,
+      "analyzer": "mozillaEvaluationWorker",
+      "result": {
+        "level": "non compliant",
+        "failures": {
+          "bad": null,
+          "old": [
+            "sha256WithRSAEncryption is not an old certificate signature, use sha1WithRSAEncryption",
+            "consider adding ciphers ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, DHE-DSS-AES128-GCM-SHA256, DHE-DSS-AES256-GCM-SHA384, ECDHE-ECDSA-AES128-SHA256, ECDHE-ECDSA-AES128-SHA, ECDHE-ECDSA-AES256-SHA384, ECDHE-ECDSA-AES256-SHA, DHE-DSS-AES128-SHA256, DHE-DSS-AES256-SHA, ECDHE-RSA-DES-CBC3-SHA, ECDHE-ECDSA-DES-CBC3-SHA, EDH-RSA-DES-CBC3-SHA, DHE-DSS-AES256-SHA256, DHE-DSS-AES128-SHA, DHE-RSA-CHACHA20-POLY1305, ECDHE-RSA-CAMELLIA256-SHA384, ECDHE-ECDSA-CAMELLIA256-SHA384, DHE-RSA-CAMELLIA256-SHA256, DHE-DSS-CAMELLIA256-SHA256, DHE-DSS-CAMELLIA256-SHA, CAMELLIA256-SHA256, ECDHE-RSA-CAMELLIA128-SHA256, ECDHE-ECDSA-CAMELLIA128-SHA256, DHE-RSA-CAMELLIA128-SHA256, DHE-DSS-CAMELLIA128-SHA256, DHE-DSS-CAMELLIA128-SHA, CAMELLIA128-SHA256, DHE-RSA-SEED-SHA, DHE-DSS-SEED-SHA, SEED-SHA",
+            "add protocols SSLv3",
+            "use DHE of 1024bits and ECC of 160bits"
+          ],
+          "modern": [
+            "remove ciphersuites DHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES256-GCM-SHA384, ECDHE-RSA-AES128-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA, DHE-RSA-AES256-SHA256, DHE-RSA-AES256-SHA, AES128-GCM-SHA256, AES256-GCM-SHA384, AES128-SHA256, AES256-SHA256, AES128-SHA, AES256-SHA, DHE-RSA-CAMELLIA256-SHA, CAMELLIA256-SHA, DHE-RSA-CAMELLIA128-SHA, CAMELLIA128-SHA, DES-CBC3-SHA",
+            "consider adding ciphers ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-ECDSA-AES128-SHA256",
+            "remove protocols TLSv1, TLSv1.1",
+            "enable Perfect Forward Secrecy with a curve of at least 256bits, don't use DHE",
+            "use a certificate of type ecdsa, not RSA"
+          ],
+          "intermediate": [
+            "remove ciphersuites DHE-RSA-CAMELLIA256-SHA, CAMELLIA256-SHA, DHE-RSA-CAMELLIA128-SHA, CAMELLIA128-SHA",
+            "consider adding ciphers ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-ECDSA-AES128-SHA256, ECDHE-ECDSA-AES128-SHA, ECDHE-ECDSA-AES256-SHA384, ECDHE-ECDSA-AES256-SHA, ECDHE-ECDSA-DES-CBC3-SHA, ECDHE-RSA-DES-CBC3-SHA, EDH-RSA-DES-CBC3-SHA"
+          ]
         }
-      }
+      },
+      "success": true
     },
-    "pass": false,
-    "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-    "score_description": "Subresource Integrity (SRI) not implemented, but all external scripts are loaded over https",
-    "score_modifier": -5
-  },
-  "x-content-type-options": {
-    "expectation": "x-content-type-options-nosniff",
-    "name": "x-content-type-options",
-    "output": {
-      "data": "nosniff"
+    {
+      "id": 5244432,
+      "analyzer": "mozillaGradingWorker",
+      "result": {
+        "grade": 91.5,
+        "failures": null,
+        "lettergrade": "A"
+      },
+      "success": true
     },
-    "pass": true,
-    "result": "x-content-type-options-nosniff",
-    "score_description": "X-Content-Type-Options header set to \"nosniff\"",
-    "score_modifier": 0
-  },
-  "x-frame-options": {
-    "expectation": "x-frame-options-sameorigin-or-deny",
-    "name": "x-frame-options",
-    "output": {
-      "data": "SAMEORIGIN"
-    },
-    "pass": true,
-    "result": "x-frame-options-sameorigin-or-deny",
-    "score_description": "X-Frame-Options (XFO) header set to SAMEORIGIN or DENY",
-    "score_modifier": 0
-  },
-  "x-xss-protection": {
-    "expectation": "x-xss-protection-1-mode-block",
-    "name": "x-xss-protection",
-    "output": {
-      "data": "1"
-    },
-    "pass": true,
-    "result": "x-xss-protection-enabled",
-    "score_description": "X-XSS-Protection header set to \"1\"",
-    "score_modifier": 0
-  }
+    {
+      "id": 5244434,
+      "analyzer": "sslLabsClientSupport",
+      "result": [
+        {
+          "name": "Android",
+          "version": "2.3.7",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 47
+        },
+        {
+          "name": "Android",
+          "curve": "secp256r1",
+          "version": "4.0.4",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Android",
+          "curve": "secp256r1",
+          "version": "4.1.1",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Android",
+          "curve": "secp256r1",
+          "version": "4.2.2",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Android",
+          "curve": "secp256r1",
+          "version": "4.3",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Android",
+          "curve": "secp256r1",
+          "version": "4.4.2",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Android",
+          "curve": "secp256r1",
+          "version": "5.0.0",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Android",
+          "curve": "secp256r1",
+          "version": "6.0",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Android",
+          "curve": "secp256r1",
+          "version": "7.0",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Baidu",
+          "curve": "secp256r1",
+          "version": "Jan 2015",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "BingBot",
+          "version": "Dec 2013",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 47
+        },
+        {
+          "name": "BingPreview",
+          "version": "Dec 2013",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "DHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 57
+        },
+        {
+          "name": "BingPreview",
+          "version": "Jun 2014",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "DHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 57
+        },
+        {
+          "name": "BingPreview",
+          "curve": "secp256r1",
+          "version": "Jan 2015",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "27",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "28",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "29",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "30",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "31",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "32",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "33",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "34",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "35",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "36",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "37",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "39",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "40",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "42",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "43",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "45",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "47",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "48",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "49",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "49",
+          "platform": "XP SP3",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "50",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Chrome",
+          "curve": "secp256r1",
+          "version": "51",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "21",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "10.0.12 ESR",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "17.0.7 ESR",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "24.2.0 ESR",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "31.3.0 ESR",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "version": "21",
+          "platform": "Fedora 19",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "DHE-RSA-CAMELLIA256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 136
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "22",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "24",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "26",
+          "platform": "Win 8",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "27",
+          "platform": "Win 8",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "29",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "30",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "31",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "32",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "34",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "35",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "37",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "39",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "41",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "42",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "44",
+          "platform": "OS X",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "45",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "46",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "47",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "49",
+          "platform": "XP SP3",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Firefox",
+          "curve": "secp256r1",
+          "version": "49",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "Googlebot",
+          "curve": "secp256r1",
+          "version": "Oct 2013",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49171
+        },
+        {
+          "name": "Googlebot",
+          "curve": "secp256r1",
+          "version": "Jun 2014",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49171
+        },
+        {
+          "name": "Googlebot",
+          "curve": "secp256r1",
+          "version": "Feb 2015",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-GCM-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49199
+        },
+        {
+          "name": "IE",
+          "version": "6",
+          "platform": "",
+          "curve_code": 0,
+          "is_supported": false,
+          "protocol_code": 0
+        },
+        {
+          "name": "IE",
+          "version": "6",
+          "platform": "",
+          "curve_code": 0,
+          "is_supported": false,
+          "protocol_code": 0
+        },
+        {
+          "name": "IE",
+          "version": "7",
+          "platform": "Vista",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 47
+        },
+        {
+          "name": "IE",
+          "version": "8",
+          "platform": "XP",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "DES-CBC3-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 10
+        },
+        {
+          "name": "IE",
+          "version": "8",
+          "platform": "XP",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "DES-CBC3-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 10
+        },
+        {
+          "name": "IE",
+          "version": "8",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 47
+        },
+        {
+          "name": "IE",
+          "version": "9",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 47
+        },
+        {
+          "name": "IE",
+          "version": "8-10",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 47
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "8-10",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "IE",
+          "version": "11",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 60
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 7",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 10 Preview",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "IE",
+          "version": "11",
+          "platform": "Win 8.1",
+          "protocol": "TLSv1.2",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 60
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 8.1",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 8.1",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 8.1",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 8.1",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "IE",
+          "version": "10",
+          "platform": "Win Phone 8.0",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 47
+        },
+        {
+          "name": "IE",
+          "version": "11",
+          "platform": "Win Phone 8.1",
+          "protocol": "TLSv1.2",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 60
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win Phone 8.1 Update",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 10",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "IE",
+          "curve": "secp256r1",
+          "version": "11",
+          "platform": "Win 10",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Edge",
+          "curve": "secp256r1",
+          "version": "12",
+          "platform": "Win 10",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Edge",
+          "curve": "secp256r1",
+          "version": "13",
+          "platform": "Win 10",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Edge",
+          "curve": "secp256r1",
+          "version": "13",
+          "platform": "Win 10",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Edge",
+          "curve": "secp256r1",
+          "version": "13",
+          "platform": "Win Phone 10",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Java",
+          "version": "6u45",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 47
+        },
+        {
+          "name": "Java",
+          "curve": "secp256r1",
+          "version": "7u25",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49171
+        },
+        {
+          "name": "Java",
+          "curve": "secp256r1",
+          "version": "8b132",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49191
+        },
+        {
+          "name": "Java",
+          "curve": "secp256r1",
+          "version": "8u31",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-SHA256",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49191
+        },
+        {
+          "name": "OpenSSL",
+          "version": "0.9.8y",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "DHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 57
+        },
+        {
+          "name": "OpenSSL",
+          "curve": "secp256r1",
+          "version": "1.0.1h",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "OpenSSL",
+          "curve": "secp256r1",
+          "version": "1.0.1l",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "OpenSSL",
+          "curve": "secp256r1",
+          "version": "1.0.2e",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Opera",
+          "version": "12.15",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "DHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 57
+        },
+        {
+          "name": "Opera",
+          "curve": "secp256r1",
+          "version": "15",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Opera",
+          "curve": "secp256r1",
+          "version": "16",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Opera",
+          "curve": "secp256r1",
+          "version": "17",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "5",
+          "platform": "iOS 5.1.1",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "5.1.9",
+          "platform": "OS X 10.6.8",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES128-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49171
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "6",
+          "platform": "iOS 6.0.1",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "6.0.4",
+          "platform": "OS X 10.8.4",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "7",
+          "platform": "iOS 7.1",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "8",
+          "platform": "iOS 8.0 Beta",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "7",
+          "platform": "OS X 10.9",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "8",
+          "platform": "iOS 8.4",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "8",
+          "platform": "OS X 10.10",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49192
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "9",
+          "platform": "iOS 9",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "9",
+          "platform": "OS X 10.11",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "10",
+          "platform": "iOS 10",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Safari",
+          "curve": "secp256r1",
+          "version": "10",
+          "platform": "OS X 10.12",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Apple ATS",
+          "curve": "secp256r1",
+          "version": "9",
+          "platform": "iOS 9",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Tor",
+          "curve": "secp256r1",
+          "version": "17.0.9",
+          "platform": "Win 7",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Yahoo Slurp",
+          "curve": "secp256r1",
+          "version": "Oct 2013",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 49172
+        },
+        {
+          "name": "Yahoo Slurp",
+          "curve": "secp256r1",
+          "version": "Jun 2014",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "Yahoo Slurp",
+          "curve": "secp256r1",
+          "version": "Jan 2015",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "YandexBot",
+          "version": "3.0",
+          "platform": "",
+          "curve_code": 0,
+          "is_supported": false,
+          "protocol_code": 0
+        },
+        {
+          "name": "YandexBot",
+          "version": "May 2014",
+          "platform": "",
+          "protocol": "TLSv1",
+          "curve_code": 0,
+          "ciphersuite": "DHE-RSA-AES256-SHA",
+          "is_supported": true,
+          "protocol_code": 769,
+          "ciphersuite_code": 57
+        },
+        {
+          "name": "YandexBot",
+          "curve": "secp256r1",
+          "version": "Sep 2014",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        },
+        {
+          "name": "YandexBot",
+          "curve": "secp256r1",
+          "version": "Jan 2015",
+          "platform": "",
+          "protocol": "TLSv1.2",
+          "curve_code": 23,
+          "ciphersuite": "ECDHE-RSA-AES256-GCM-SHA384",
+          "is_supported": true,
+          "protocol_code": 771,
+          "ciphersuite_code": 49200
+        }
+      ],
+      "success": true
+    }
+  ],
+  "ack": true,
+  "attempts": 2,
+  "analysis_params": {}
 }
