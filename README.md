@@ -33,6 +33,7 @@ Out of the box web app/docker security scan tool.
 - [ ] https://github.com/sullo/nikto
 - [ ] https://github.com/rabbots/sqlmap
 - [x] [Mozilla HTTP Observatory](https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md)
+- [ ] https://github.com/OpenSCAP/openscap
 
 ### SSL
 - [ ] ~~https://github.com/jarthod/ssl-test~~
