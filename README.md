@@ -20,6 +20,10 @@ Out of the box web app/docker security scan tool.
 - - -
 
 ## Security Tools
+
+### 0day
+- [ ] [ticketbleed](https://blog.filippo.io/finding-ticketbleed/), https://gist.github.com/FiloSottile/fc7822b1f5b475a25e58d77d1b394860
+
 ### Docker Ready
 > Deprecated, too much timeout and error.
 - [ ] ~~https://github.com/bearded-web/images~~
