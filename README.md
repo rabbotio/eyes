@@ -26,6 +26,7 @@ Out of the box web app/docker security scan tool.
 
 ### Docker Ready
 > Deprecated, too much timeout and error.
+
 - [ ] ~~https://github.com/bearded-web/images~~
 - [ ] ~~https://github.com/mozilla/tls-observatory~~
 - [ ] ~~https://github.com/kost/docker-webscan/blob/master/alpine-nikto-git/Dockerfile~~
@@ -43,6 +44,7 @@ Out of the box web app/docker security scan tool.
 - [ ] ~~https://github.com/jarthod/ssl-test~~
 - [ ] ~~https://github.com/nabla-c0d3/sslyze~~
 - [x] [Mozilla TLS Observatory](https://github.com/mozilla/tls-observatory)
+- [ ] https://github.com/drwetter/testssl.sh
 
 ### Docker
 - [ ] https://github.com/docker/docker-bench-security
