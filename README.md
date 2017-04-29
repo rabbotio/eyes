@@ -21,6 +21,10 @@ Out of the box web app/docker security scan tool.
 
 ## Security Tools
 
+### ToTry
+- [ ] https://github.com/CISOfy/lynis
+- [ ] https://github.com/lateralblast/lunar
+
 ### 0day
 - [ ] [ticketbleed](https://blog.filippo.io/finding-ticketbleed/), https://gist.github.com/FiloSottile/fc7822b1f5b475a25e58d77d1b394860
 
